@@ -23,7 +23,11 @@ ALTER TABLE posts ADD COLUMN user_name TEXT;
 
 -- Insert 5 posts into posts table
 
-
+INSERT INTO posts (title, body, created_at, updated_at, user_name) VALUES ('Cool Post', 'This is super fun.', CURRENT_TIMESTAMP, NULL, 'user1'), ('Summer Fun', 'I''m ready
+ for the beach!', CURRENT_TIMESTAMP, NULL, 'user2'), ('School Days', 'Is it lunch yet?', 
+CURRENT_TIMESTAMP, NULL, 'user3'), ('Surfs Up', 'I hope there''s some waves.', CURRENT_TI
+MESTAMP, NULL, 'user4'), ('Vacation Time', 'Disney here I come!!', CURRENT_TIMESTAMP, NUL
+L, 'user5');
 
 -- Delete a post with id of 1
 
