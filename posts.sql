@@ -19,7 +19,7 @@ CREATE TABLE posts (id SERIAL PRIMARY KEY, title VARCHAR(255), body TEXT, create
 
 -- Alter posts table to include user name
 
-
+ALTER TABLE posts ADD COLUMN user_name TEXT;
 
 -- Insert 5 posts into posts table
 
