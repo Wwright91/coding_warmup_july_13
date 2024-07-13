@@ -15,7 +15,7 @@ CREATE DATABASE blog;
 -- created_at TIMESTAMP,
 -- updated_at TIMESTAMP
 
-
+CREATE TABLE posts (id SERIAL PRIMARY KEY, title VARCHAR(255), body TEXT, created_at TIMESTAMP, updated_at TIMESTAMP);
 
 -- Alter posts table to include user name
 
